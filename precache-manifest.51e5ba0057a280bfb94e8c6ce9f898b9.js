@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c5add1a8f9206b19a6979051fe92241d",
+    "revision": "78651aa106bd9cb0e3776cabad9ce5d4",
     "url": "/Burger-Order/index.html"
   },
   {
-    "revision": "151ecf5d4863328c164a",
+    "revision": "8ceb9fcd75c45caeae95",
     "url": "/Burger-Order/static/css/main.056e7cd4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Burger-Order/static/js/2.a8cace87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "151ecf5d4863328c164a",
-    "url": "/Burger-Order/static/js/main.d983d770.chunk.js"
+    "revision": "8ceb9fcd75c45caeae95",
+    "url": "/Burger-Order/static/js/main.9e1e87ef.chunk.js"
   },
   {
     "revision": "49c964730bebec28d9c0",

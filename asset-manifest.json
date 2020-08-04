@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Burger-Order/static/css/main.056e7cd4.chunk.css",
-    "main.js": "/Burger-Order/static/js/main.d983d770.chunk.js",
-    "main.js.map": "/Burger-Order/static/js/main.d983d770.chunk.js.map",
+    "main.js": "/Burger-Order/static/js/main.9e1e87ef.chunk.js",
+    "main.js.map": "/Burger-Order/static/js/main.9e1e87ef.chunk.js.map",
     "runtime-main.js": "/Burger-Order/static/js/runtime-main.5609581a.js",
     "runtime-main.js.map": "/Burger-Order/static/js/runtime-main.5609581a.js.map",
     "static/js/2.a8cace87.chunk.js": "/Burger-Order/static/js/2.a8cace87.chunk.js",
     "static/js/2.a8cace87.chunk.js.map": "/Burger-Order/static/js/2.a8cace87.chunk.js.map",
     "index.html": "/Burger-Order/index.html",
-    "precache-manifest.07cac78b0db69b24fe0ed3095945d925.js": "/Burger-Order/precache-manifest.07cac78b0db69b24fe0ed3095945d925.js",
+    "precache-manifest.51e5ba0057a280bfb94e8c6ce9f898b9.js": "/Burger-Order/precache-manifest.51e5ba0057a280bfb94e8c6ce9f898b9.js",
     "service-worker.js": "/Burger-Order/service-worker.js",
     "static/css/main.056e7cd4.chunk.css.map": "/Burger-Order/static/css/main.056e7cd4.chunk.css.map",
     "static/js/2.a8cace87.chunk.js.LICENSE.txt": "/Burger-Order/static/js/2.a8cace87.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.5609581a.js",
     "static/js/2.a8cace87.chunk.js",
     "static/css/main.056e7cd4.chunk.css",
-    "static/js/main.d983d770.chunk.js"
+    "static/js/main.9e1e87ef.chunk.js"
   ]
 }
