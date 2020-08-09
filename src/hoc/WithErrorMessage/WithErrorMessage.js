@@ -8,7 +8,7 @@ const withErrorMessage = (WrappedComponent, Axios) => {
       error: null,
     };
 
-    componentDidMount() {
+    componentWillMount() {
       Axios.interceptors.request.use((req) => {
         return req;
       });
