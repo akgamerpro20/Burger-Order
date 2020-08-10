@@ -9,16 +9,21 @@ const withErrorMessage = (WrappedComponent, Axios) => {
     };
 
     componentWillMount() {
-      Axios.interceptors.request.use((req) => {
+      this.reqInterceptor = Axios.interceptors.request.use((req) => {
         return req;
       });
 
-      Axios.interceptors.response.use(
+      this.resInterceptor = Axios.interceptors.response.use(
         (res) => res,
         (error) => {
           this.setState({ error: error });
         }
       );
+    }
+
+    componentWillUnmount() {
+      Axios.interceptors.request.eject(this.reqInterceptor);
+      Axios.interceptors.response.eject(this.resInterceptor);
     }
 
     errorClickHandler = () => {
