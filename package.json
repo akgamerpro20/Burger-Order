@@ -2,7 +2,7 @@
   "name": "burger-order",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://akgamerpro20.github.io/Burger-Order",
+  "homepage": "http://akgamerpro20.github.io/burger",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
