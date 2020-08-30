@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Burger-Order/precache-manifest.fb12a514ca51bdde87c9f226f41b9954.js"
+  "/Burger-Order/precache-manifest.cac16d0851fd074bb383f656eb9ada6d.js"
 );
 
 self.addEventListener('message', (event) => {
