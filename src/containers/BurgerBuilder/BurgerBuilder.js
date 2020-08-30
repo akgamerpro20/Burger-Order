@@ -60,25 +60,38 @@ class BurgerBuilder extends Component {
   };
 
   purchaseContinueHandler = () => {
-    // alert("You Continue");
-    this.setState({ spinner: true });
-    const order = {
-      ingredients: this.state.ingredients,
-      price: this.state.totalPrice.toFixed(2),
-      customer: {
-        name: "Aung Khant",
-        address: {
-          street: "Bawga Park 3 Street",
-          zipCode: "123456",
-          country: "Myanmar (Burma)",
-        },
-        email: "aungkhant@gmail.com",
-      },
-      deliveryMethod: "fastest",
-    };
-    Axios.post("/orders.json", order)
-      .then((response) => this.setState({ spinner: false, purchasing: false }))
-      .catch((error) => this.setState({ spinner: false }));
+    // this.setState({ spinner: true });
+    // const order = {
+    //   ingredients: this.state.ingredients,
+    //   price: this.state.totalPrice.toFixed(2),
+    //   customer: {
+    //     name: "Aung Khant",
+    //     address: {
+    //       street: "Bawga Park 3 Street",
+    //       zipCode: "123456",
+    //       country: "Myanmar (Burma)",
+    //     },
+    //     email: "aungkhant@gmail.com",
+    //   },
+    //   deliveryMethod: "fastest",
+    // };
+    // Axios.post("/orders.json", order)
+    //   .then((response) => this.setState({ spinner: false, purchasing: false }))
+    //   .catch((error) => this.setState({ spinner: false }));
+    const queryParams = [];
+    for (let i in this.state.ingredients) {
+      queryParams.push(
+        encodeURIComponent(i) +
+          "=" +
+          encodeURIComponent(this.state.ingredients[i])
+      );
+    }
+    queryParams.push("price=" + this.state.totalPrice.toFixed(2));
+    const queryString = queryParams.join("&");
+    this.props.history.push({
+      pathname: "/checkout",
+      search: "?" + queryString,
+    });
   };
 
   addIngredientHandler = (type) => {
@@ -123,7 +136,11 @@ class BurgerBuilder extends Component {
 
     let orderSummary = null;
 
-    let burger = this.state.error ? <p style={{textAlign: 'center'}}>Ingredient doesn't exist.</p> : <Spinner />;
+    let burger = this.state.error ? (
+      <p style={{ textAlign: "center" }}>Ingredient doesn't exist.</p>
+    ) : (
+      <Spinner />
+    );
 
     if (this.state.ingredients) {
       burger = (
